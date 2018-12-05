@@ -1,5 +1,6 @@
 """Tests for aoc2018.day4."""
 
+import pytest
 
 from aoc2018 import day4
 
@@ -24,6 +25,7 @@ INPUT = """\
 """.splitlines()
 
 
+@pytest.mark.skip
 def test_sample() -> None:
     events = [day4.parse_guard_event(e) for e in INPUT]
     print(events)
